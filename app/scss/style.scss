@@ -1591,4 +1591,196 @@
 }
 //end product-one
 
+// start page 404
+.page-404__wrapper,
+.about__wrapper,
+.contacts__wrapper {
+	border: 1px solid #dcdcdc;
+	background-color: #fff;
+	margin-bottom: 150px;
+}
+.page-404__head,
+.about__head,
+.contacts__head {
+	font-size: 24px;
+	color: #444444;
+	padding: 23px 27px;
+	@include f500;
+	border-bottom: 1px solid #dcdcdc;
+}
+.page-404__inner {
+	text-align: center;
+	background-color: $green;
+	color: #fff;
+}
+.page-404__404 {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 800;
+	font-size: 300px;
+
+	padding-top: 70px;
+	padding-bottom: 15px;
+	line-height: 300px;
+	position: relative;
+	&::after {
+		content: "";
+		position: absolute;
+		background-image: url(../images/page-404.png);
+		width: 157px;
+		height: 301px;
+		margin-left: 15px;
+	}
+}
+.page-404__title {
+	margin-bottom: 30px;
+	@include f300;
+	font-size: 30px;
+}
+.page-404__text {
+	max-width: 508px;
+	font-size: 18px;
+	margin: 0 auto;
+	margin-bottom: 60px;
+}
+.page-404__link {
+	color: #fff;
+	font-size: 14px;
+	text-transform: uppercase;
+	border-radius: 4px;
+	border: 1px solid #fff;
+	padding: 16px 30px;
+	margin-bottom: 100px;
+}
+// end page 404
+
+//start about
+.about__inner {
+	padding: 0px 50px;
+}
+.about__box {
+	h3 {
+		font-size: 20px;
+		@include f700;
+		color: #444;
+		margin-top: 43px;
+		margin-bottom: 16px;
+	}
+	p {
+		margin-bottom: 45px;
+	}
+}
+//end about
+
+//start contacts
+.contacts__head {
+	padding: 23px 40px;
+}
+.contacts__inner {
+	padding: 35px 40px 15px;
+}
+.contacts__map {
+	margin-bottom: 50px;
+	iframe {
+		width: 100%;
+		height: 415px;
+	}
+}
+.contacts__box {
+	display: flex;
+}
+.contacts__info {
+	max-width: 330px;
+	width: 100%;
+	margin-right: 30px;
+}
+.contacts__info-item {
+	margin-bottom: 23px;
+}
+.contacts__info-title {
+	padding-bottom: 20px;
+	position: relative;
+	font-size: 20px;
+	color: $bg;
+	padding-left: 40px;
+	@include f500;
+	&::after {
+		content: "";
+		position: absolute;
+		width: 44px;
+		height: 4px;
+		background-color: $green;
+		left: 40px;
+		bottom: 0;
+	}
+	&::before {
+		font-family: "icomoon";
+		color: $green;
+		font-size: 24px;
+		position: absolute;
+		left: 0;
+	}
+}
+.contacts__info-content {
+	padding-left: 40px;
+	color: #707070;
+	margin-top: 23px;
+	max-width: 270px;
+}
+.contacts__form-title {
+	margin-bottom: 23px;
+	font-size: 24px;
+	@include f500;
+	color: #333;
+}
+.contacts__form-row {
+	display: flex;
+	justify-content: space-between;
+}
+.contacts__form {
+	width: 100%;
+	height: 100%;
+	input {
+		width: 100%;
+		border: none;
+		height: 43px;
+		padding-left: 17px;
+		padding-right: 17px;
+		background-color: #f1f4f5;
+		margin-bottom: 28px;
+		color: #7a7a7a;
+		&::placeholder {
+			color: #7a7a7a;
+		}
+		& + input {
+			margin-left: 25px;
+		}
+	}
+	textarea {
+		width: 100%;
+		display: block;
+		border: none;
+		padding: 13px 17px;
+		min-height: 190px;
+		background-color: #f1f4f5;
+		color: #7a7a7a;
+		resize: none;
+		margin-bottom: 23px;
+		&::placeholder {
+			color: #7a7a7a;
+		}
+	}
+	button {
+		cursor: pointer;
+		text-transform: uppercase;
+		padding: 18px 37px;
+		border: none;
+		background-color: $green;
+		outline: none;
+		text-align: center;
+		color: #fff;
+		font-size: 16px;
+		@include f700;
+	}
+}
+//end contacts
 @import "media";

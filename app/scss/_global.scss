@@ -1,4 +1,4 @@
-html{
+html {
 	box-sizing: border-box;
 }
 html,
@@ -7,8 +7,20 @@ body {
 }
 *,
 *::before,
-*::after{
+*::after {
 	box-sizing: inherit;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+	padding: 0;
+	font-size: inherit;
+	font-weight: inherit;
 }
 .wrapper {
 	display: flex;
@@ -21,8 +33,8 @@ body {
 .footer {
 	flex: 0 0 auto;
 }
-body{
-	font-family: 'Roboto-Regular',sans-serif;
+body {
+	font-family: "Roboto-Regular", sans-serif;
 	font-weight: 400;
 	font-size: 15px;
 	line-height: 24px;
@@ -30,39 +42,40 @@ body{
 	overflow-x: hidden;
 }
 
-a{
+a {
 	display: inline-block;
 	text-decoration: none;
 	color: $text;
 }
 
-ul,li{
+ul,
+li {
 	margin: 0;
 	padding: 0;
 	list-style: none;
 }
 
-.container{
+.container {
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 15px;
 }
 
-.container-fluid{
+.container-fluid {
 	max-width: 100%;
 	margin: 0 auto;
 	padding: 0 30px;
 }
 
-@media(max-width: 720px){
-	.container-fluid{
+@media (max-width: 720px) {
+	.container-fluid {
 		padding: 0 15px;
 	}
 }
-.page-content{
+.page-content {
 	background-color: $grey;
 }
-.title{
+.title {
 	text-align: center;
 	margin-bottom: 30px;
 	color: $bg;
@@ -70,45 +83,45 @@ ul,li{
 	font-size: 36px;
 	line-height: 60px;
 }
-.rate-star{
+.rate-star {
 	display: inline-block;
 	margin-right: 12px;
 }
-.breadcrumbs{
-	&__inner{
+.breadcrumbs {
+	&__inner {
 		padding: 45px 0px 40px;
 	}
-	&__list{
-		li{
+	&__list {
+		li {
 			display: inline-block;
 			position: relative;
-			& + li{
+			& + li {
 				padding-left: 22px;
-				&::before{
+				&::before {
 					content: "-";
 					position: absolute;
 					left: 8px;
 					color: $green;
 				}
 			}
-			&:last-child{
+			&:last-child {
 				a,
-				span{
+				span {
 					color: $bg;
 				}
 			}
 		}
-		a{
+		a {
 			color: #b0bec5;
 		}
 	}
 }
-.angle-right--pos{
+.angle-right--pos {
 	position: relative;
 	padding-left: 15px;
-	&::before{
+	&::before {
 		content: "\f105";
-		font-family: 'icomoon';
+		font-family: "icomoon";
 		position: absolute;
 		left: 0;
 		color: $green;
