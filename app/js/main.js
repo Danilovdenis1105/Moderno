@@ -41,6 +41,8 @@ $(function () {
 		$('.header__box').toggleClass('active');
 	});
 
+	$('input[type=file], select').styler();
+
 	$('.product-one__tabs .tab, .settings-tabs .tab').on('click', function (event) {
 		var id = $(this).attr('data-id');
 		$('.product-one__tabs, .settings-tabs .tab').find('.tab-item').removeClass('active-tab').hide();
