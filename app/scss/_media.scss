@@ -180,6 +180,7 @@
 		flex-basis: calc(50% - 20px);
 		margin-left: 20px;
 		margin-bottom: 20px;
+		max-width: 50%;
 	}
 	.product-page__item.list {
 		flex-basis: 100%;
@@ -206,7 +207,7 @@
 		right: 0;
 		z-index: 1;
 		text-align: center;
-		padding-bottom: 30px;
+		// padding-bottom: 30px;
 		a {
 			display: block;
 			text-align: center;
@@ -464,6 +465,7 @@
 		margin-right: 2px;
 	}
 }
+
 @media (max-width: 520px) {
 	#modal .login__wrapper .create-acc {
 		width: 100%;
@@ -497,12 +499,12 @@
 		position: absolute;
 		transition: all 0.5s;
 		background-color: #fff;
-		height: 70px;
+		height: 69px;
 		left: 100%;
 		right: -100%;
 		z-index: 2;
 		&.active {
-			left: 70px;
+			left: 67px;
 			right: 90px;
 		}
 	}
