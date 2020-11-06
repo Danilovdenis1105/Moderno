@@ -4,6 +4,8 @@ html {
 html,
 body {
 	height: 100%;
+	position: relative;
+	overflow-x: hidden;
 }
 *,
 *::before,
@@ -39,7 +41,6 @@ body {
 	font-size: 15px;
 	line-height: 24px;
 	color: $text;
-	overflow-x: hidden;
 }
 
 a {
@@ -90,6 +91,8 @@ li {
 .breadcrumbs {
 	&__inner {
 		padding: 45px 0px 40px;
+		overflow: hidden;
+		width: 1200px;
 	}
 	&__list {
 		li {
@@ -127,4 +130,7 @@ li {
 		color: $green;
 		font-size: 14px;
 	}
+}
+#modal {
+	display: none;
 }
